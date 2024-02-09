@@ -8,6 +8,9 @@
   --clr-neutral-500: hsl(144, 70%, 58%);
   --clr-neutral-900: hsl(0, 0%, 11%);
 
+  --clr-accent-1: hsl(160, 84%, 39%);
+  --clr-accent-2: hsl(142, 93%, 65%);
+
   /* Font family */
   --font-family-body: "Inter", sans-serif;
   --font-family-heading: "Karla", sans-serif;

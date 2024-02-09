@@ -89,6 +89,8 @@ body {
 .title {
   color: var(--clr-accent-100);
   font-size: var(--fs-800);
+  font-family: var(--font-family-heading);
+  font-weight: var(--fw-dark);
 }
 
 .accent-color {

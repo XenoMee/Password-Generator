@@ -123,6 +123,10 @@ body {
   justify-content: space-between;
 }
 
+.password {
+  padding: 0.3rem 1.5rem;
+}
+
 /* Utility classes */
 .grid-flow {
   display: grid;

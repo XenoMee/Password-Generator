@@ -3,3 +3,4 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let firstPasswordEl = document.getElementById("first-password-el");
 let secondPasswordEl = document.getElementById("second-password-el");
+let generatePasswordButton = document.getElementById("generate-btn");

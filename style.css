@@ -128,3 +128,7 @@ body {
 .grid-flow[data-spacing="large"] {
   gap: 2rem;
 }
+
+.flex-group {
+  display: flex;
+}

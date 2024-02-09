@@ -101,3 +101,8 @@ body {
 .accent-color {
   color: var(--clr-accent-500);
 }
+
+/* Layout */
+.generator {
+  background-color: var(--clr-primary-800);
+}

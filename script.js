@@ -9,7 +9,7 @@ function generateRandomPasswords() {
     let passwordOne = "";
     let passwordTwo = "";
     for (let i = 0; i < 16; i++) {
-        // let randomFirstCharacter = Math.floor(Math.random() * characters.length);
-        // let randomSecondCharacter = Math.floor(Math.random() * characters.length);
+        let randomFirstCharacter = Math.floor(Math.random() * characters.length);
+        let randomSecondCharacter = Math.floor(Math.random() * characters.length);
     }
 }

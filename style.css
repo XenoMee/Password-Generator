@@ -109,3 +109,9 @@ body {
   background-color: var(--clr-primary-800);
   padding: var(--content-padding);
 }
+
+/* Utility classes */
+.grid-flow {
+  display: grid;
+  gap: 1.5rem;
+}

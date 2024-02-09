@@ -136,6 +136,10 @@ body {
   cursor: pointer;
 }
 
+.btn:is(:hover, :focus) {
+  color: var(--clr-primary-800);
+}
+
 hr {
   border: 1px solid var(--clr-primary-700);
 }

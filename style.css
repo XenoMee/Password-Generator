@@ -133,6 +133,7 @@ body {
   color: var(--clr-neutral-100);
   font-size: var(--fs-200);
   font-weight: var(--fw-medium);
+  cursor: pointer;
 }
 
 hr {

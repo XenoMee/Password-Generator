@@ -7,4 +7,8 @@
 
   --clr-accent-100: hsl(0, 0%, 100%);
   --clr-accent-900: hsl(0, 0%, 11%);
+
+  /* Font family */
+  --font-family-body: "Inter", sans-serif;
+  --font-family-heading: "Karla", sans-serif;
 }

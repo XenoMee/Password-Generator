@@ -107,4 +107,5 @@ body {
   --content-padding: 1.5rem;
 
   background-color: var(--clr-primary-800);
+  padding: var(--content-padding);
 }

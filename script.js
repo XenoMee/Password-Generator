@@ -14,4 +14,7 @@ function generateRandomPasswords() {
         passwordOne += randomFirstCharacter;
         passwordTwo += randomSecondCharacter;
     }
+
+    firstPasswordEl.innerHTML = passwordOne;
+    secondPasswordEl.innerHTML = passwordTwo;
 }

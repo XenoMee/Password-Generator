@@ -114,6 +114,10 @@ body {
   padding: var(--content-padding);
 }
 
+.intro {
+  justify-items: start;
+}
+
 .btn {
   display: inline-block;
   padding: 0.5rem 1.5rem;
@@ -144,7 +148,7 @@ body {
 }
 
 .grid-flow[data-spacing="large"] {
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .flex-group {

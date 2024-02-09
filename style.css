@@ -161,5 +161,19 @@ body {
 @media (min-width: 550px) {
   body {
     justify-content: center;
+    font-size: var(--fs-400);
   }
+
+  .title {
+    font-size: var(--fs-800);
+  }
+
+  .btn,
+  .password {
+    font-size: var(--fs-300);
+  }
+
+  /* .generator {
+    --content-padding: 5rem 2rem;
+  } */
 }

@@ -111,6 +111,7 @@ body {
 .generator {
   --content-padding: 5rem 1.4rem;
 
+  max-width: 34.5rem;
   background-color: var(--clr-primary-800);
   padding: var(--content-padding);
   border-radius: 0.8rem;

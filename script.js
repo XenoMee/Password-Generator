@@ -11,5 +11,7 @@ function generateRandomPasswords() {
     for (let i = 0; i < 16; i++) {
         let randomFirstCharacter = Math.floor(Math.random() * characters.length);
         let randomSecondCharacter = Math.floor(Math.random() * characters.length);
+        passwordOne += randomFirstCharacter;
+        passwordTwo += randomSecondCharacter;
     }
 }

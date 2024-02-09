@@ -177,6 +177,11 @@ hr {
     font-size: var(--fs-400);
   }
 
+  .generator {
+    --content-padding: 8rem 3rem;
+    margin: 0 auto;
+  }
+
   .title {
     font-size: var(--fs-800);
   }
@@ -186,8 +191,7 @@ hr {
     font-size: var(--fs-300);
   }
 
-  .generator {
-    --content-padding: 8rem 3rem;
-    margin: 0 auto;
+  .display {
+    flex-direction: row;
   }
 }

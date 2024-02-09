@@ -111,7 +111,7 @@ body {
 .generator {
   --content-padding: 5rem 1.4rem;
 
-  max-width: 34.5rem;
+  max-width: 37rem;
   background-color: var(--clr-primary-800);
   padding: var(--content-padding);
   border-radius: 0.8rem;
@@ -158,9 +158,8 @@ body {
   display: flex;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   body {
-    justify-content: center;
     font-size: var(--fs-400);
   }
 
@@ -175,5 +174,6 @@ body {
 
   .generator {
     --content-padding: 8rem 3rem;
+    margin: 0 auto;
   }
 }

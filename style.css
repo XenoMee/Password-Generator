@@ -100,6 +100,7 @@ body {
   font-size: var(--fs-700);
   font-family: var(--font-family-heading);
   font-weight: var(--fw-dark);
+  margin-bottom: 1rem;
 }
 
 .accent-color {

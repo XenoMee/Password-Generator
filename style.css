@@ -157,3 +157,9 @@ body {
 .flex-group {
   display: flex;
 }
+
+@media (min-width: 560px) {
+  body {
+    justify-content: center;
+  }
+}

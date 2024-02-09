@@ -72,6 +72,8 @@ h6 {
 }
 
 body {
+  background-color: var(--clr-accent-900);
+  color: var(--clr-primary-200);
   min-height: 100svh;
   line-height: 1.4;
 }

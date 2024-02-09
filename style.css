@@ -112,6 +112,7 @@ body {
 
   background-color: var(--clr-primary-800);
   padding: var(--content-padding);
+  border-radius: 0.8rem;
 }
 
 .intro {

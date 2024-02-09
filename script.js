@@ -3,8 +3,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 let firstPasswordEl = document.querySelector("first-password-el");
 let secondPasswordEl = document.querySelector("second-password-el");
 
-// firstPasswordEl.innerHTML = "";
-// secondPasswordEl.innerHTML = "";
+firstPasswordEl.innerHTML = "";
+secondPasswordEl.innerHTML = "";
 
 // function generatePassword(){
 

@@ -1,0 +1,10 @@
+:root {
+  /* Colors */
+  --clr-primary-800: hsl(215, 28%, 17%);
+  --clr-primary-700: hsl(215, 30%, 22%);
+  --clr-primary-500: hsl(144, 70%, 58%);
+  --clr-primary-200: hsl(255, 5%, 84%);
+
+  --clr-accent-100: hsl(0, 0%, 100%);
+  --clr-accent-900: hsl(0, 0%, 11%);
+}

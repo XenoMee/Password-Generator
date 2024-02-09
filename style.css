@@ -125,6 +125,8 @@ body {
 
 .password {
   padding: 0.3rem 1.5rem;
+  background-color: var(--clr-primary-700);
+  color: var(--clr-accent-500);
 }
 
 /* Utility classes */

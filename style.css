@@ -147,6 +147,7 @@ hr {
 .display {
   justify-content: space-between;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .password {

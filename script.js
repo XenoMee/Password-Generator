@@ -10,15 +10,14 @@ generatePasswordButton.addEventListener("click", function(){
 })
 
 function generateRandomPasswords() {
-    let passwordOne = "";
-    let passwordTwo = "";
-    for (let i = 0; i < 16; i++) {
-        let randomFirstCharacter = Math.floor(Math.random() * characters.length);
-        let randomSecondCharacter = Math.floor(Math.random() * characters.length);
-        console.log(randomFirstCharacter, randomSecondCharacter);
-        passwordOne += characters[randomFirstCharacter];
-        passwordTwo += characters[randomSecondCharacter];
+    let password = "";
+    for (let i = 0; i < 30; i++) {
+        let randomCharacter = Math.floor(Math.random() * characters.length);
+        password += characters[randomCharacter];
     }
+
+    let passwordOne = password.slice(0, 15);
+    let passwordTwo = password.slice(15);
 
     firstPasswordEl.innerHTML = passwordOne;
     secondPasswordEl.innerHTML = passwordTwo;

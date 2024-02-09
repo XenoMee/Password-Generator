@@ -90,3 +90,7 @@ body {
   color: var(--clr-accent-100);
   font-size: var(--fs-800);
 }
+
+.accent-color {
+  color: var(--clr-accent-500);
+}

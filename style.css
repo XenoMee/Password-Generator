@@ -83,7 +83,7 @@ body {
   background-color: var(--clr-accent-900);
   color: var(--clr-primary-200);
   font-family: var(--font-family-body);
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   font-weight: var(--fw-regular);
   min-height: 100svh;
   line-height: 1.4;

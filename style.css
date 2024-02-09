@@ -173,7 +173,7 @@ body {
     font-size: var(--fs-300);
   }
 
-  /* .generator {
-    --content-padding: 5rem 2rem;
-  } */
+  .generator {
+    --content-padding: 8rem 3rem;
+  }
 }

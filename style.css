@@ -85,6 +85,7 @@ body {
   font-weight: var(--fw-regular);
   min-height: 100svh;
   line-height: 1.4;
+  padding: 0 1rem;
 
   display: grid;
   align-content: center;

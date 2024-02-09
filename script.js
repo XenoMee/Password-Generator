@@ -10,7 +10,7 @@ secondPasswordEl.innerHTML = "";
 
 // }
 
-// function getRandomCharacter(){
-//     let randomCharacterOne = Math.floor(Math.random() * characters.length);
-// }
+function getRandomCharacter(){
+    let randomCharacterOne = Math.floor(Math.random() * characters.length);
+}
 

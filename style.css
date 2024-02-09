@@ -104,5 +104,7 @@ body {
 
 /* Layout */
 .generator {
+  --content-padding: 1.5rem;
+
   background-color: var(--clr-primary-800);
 }

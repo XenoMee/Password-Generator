@@ -5,6 +5,10 @@ let firstPasswordEl = document.getElementById("first-password-el");
 let secondPasswordEl = document.getElementById("second-password-el");
 let generatePasswordButton = document.getElementById("generate-btn");
 
+generatePasswordButton.addEventListener("click", function(){
+    generateRandomPasswords();
+})
+
 function generateRandomPasswords() {
     let passwordOne = "";
     let passwordTwo = "";

@@ -135,6 +135,10 @@ body {
   font-weight: var(--fw-medium);
 }
 
+hr {
+  border: 1px solid var(--clr-primary-700);
+}
+
 .display {
   justify-content: space-between;
 }

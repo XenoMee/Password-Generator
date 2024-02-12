@@ -148,7 +148,7 @@ hr {
   flex-direction: column;
   background-color: var(--clr-neutral-100);
   width: 100%;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   /* padding: 1rem;
   border-radius: 0.8rem; */
   /* position: relative;

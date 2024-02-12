@@ -49,6 +49,7 @@ function generateRandomPassword(length, includeUppercase, includeNumbers, includ
         const randomCode = charCodes[Math.floor(Math.random() * charCodes.length)];
         password.push(String.fromCharCode(randomCode));
     }
+    return password.join('');
 }
 
 // Create function to loop through ASCII codes

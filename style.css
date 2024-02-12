@@ -301,6 +301,10 @@ input[type="checkbox"]:checked:before {
     padding: 1rem;
   }
 
+  .password-button-container {
+    gap: 1rem;
+  }
+
   .user-settings {
     grid-template-columns: 1fr 1fr;
     place-items: center;

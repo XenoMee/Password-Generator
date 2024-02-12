@@ -45,6 +45,9 @@ function generateRandomPassword(length, includeUppercase, includeNumbers, includ
     if(includeNumbers) charCodes =  charCodes.concat(NUMBER_CHAR_CODES);
     if(includeSymbols) charCodes =  charCodes.concat(SYMBOL_CHAR_CODES);
     let password = [];
+    for(let i = 0; i < length; i++){
+        
+    }
 }
 
 // Create function to loop through ASCII codes

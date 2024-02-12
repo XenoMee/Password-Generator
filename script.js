@@ -42,6 +42,7 @@ const SYMBOL_CHAR_CODES = parseASCIICodes(33, 47).concat(
         )
     )
 );
+const errorMessageEl = document.getElementById("error-message");
 function generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols){
     let charCodes = LOWERCASE_CHAR_CODES;
     if(includeUppercase) charCodes =  charCodes.concat(UPPERCASE_CHAR_CODES);

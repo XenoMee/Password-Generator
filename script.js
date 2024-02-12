@@ -46,7 +46,8 @@ function generateRandomPassword(length, includeUppercase, includeNumbers, includ
     if(includeSymbols) charCodes =  charCodes.concat(SYMBOL_CHAR_CODES);
     let password = [];
     for(let i = 0; i < length; i++){
-        
+        const randomCode = charCodes[Math.floor(Math.random() * charCodes.length)];
+        // password.push(String.fromCharCode(randomCode));
     }
 }
 

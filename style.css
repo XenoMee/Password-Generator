@@ -208,9 +208,9 @@ hr {
   background-color: var(--clr-primary-200);
 }
 
-/* .checkbox-list {
+.checkbox-list {
   list-style: none;
-} */
+}
 
 /* .checkbox-item {
   gap: 0.7rem;

@@ -117,7 +117,7 @@ body {
 
 /* Layout */
 .generator {
-  --content-padding: 5rem 1.4rem;
+  --content-padding: 5rem 1rem;
 
   max-width: 37rem;
   background-color: var(--clr-primary-800);
@@ -154,7 +154,7 @@ hr {
   background-color: var(--clr-neutral-100);
   width: 100%;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.8rem;
   position: relative;
   overflow: hidden;
@@ -187,7 +187,7 @@ hr {
 .password-customize-form {
   background-color: var(--clr-neutral-100);
   color: var(--clr-primary-700);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.8rem;
 }
 

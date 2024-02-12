@@ -35,5 +35,5 @@ function generateRandomPassword(length, includeUppercase, includeNumbers, includ
 
 // Create function to loop through ASCII codes
 function parseASCIICodes(low, high){
-    
+    const codes = [];
 }

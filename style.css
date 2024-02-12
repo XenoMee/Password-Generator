@@ -178,12 +178,12 @@ hr {
   border: none;
 }
 
-/* .password-customize-form {
+.password-customize-form {
   background-color: var(--clr-neutral-100);
   color: var(--clr-primary-700);
-  padding: 1.5rem;
-  border-radius: 0.8rem;
-} */
+  /* padding: 1.5rem;
+  border-radius: 0.8rem; */
+}
 
 /* .custom-length {
   justify-content: start;

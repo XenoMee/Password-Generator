@@ -204,7 +204,7 @@ hr {
   cursor: pointer;
   outline: none;
   height: 0.5rem;
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
   /* background-color: var(--clr-primary-200); */
 }
 

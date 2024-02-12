@@ -22,6 +22,7 @@ const includeNumbersEl = document.getElementById("numbers-check");
 const includeSymbolsEl = document.getElementById("symbols-check");
 const generatedPassword = document.getElementById("generated-password");
 const errorMessageEl = document.getElementById("error-message");
+const strongTextEl = document.getElementById("strong-text");
 generatePasswordButton.addEventListener('click', function() {
     const length = charactersAmountNumber.value;
     const includeUppercase = includeUppercaseEl.checked;
@@ -33,7 +34,7 @@ generatePasswordButton.addEventListener('click', function() {
         errorMessageEl.classList.add("error-massage");
     } else{
         errorMessageEl.classList.remove("error-massage");
-        errorMessageEl.innerText = `Password must be at least 8 characters long.`;
+        strongTextEl.innerHTML = `Password must be at least 8 characters long.`;
     }
 });
 

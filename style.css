@@ -214,10 +214,6 @@ hr {
   background-color: var(--clr-primary-200);
 }
 
-.error-massage {
-  display: none;
-}
-
 .checkbox-list {
   list-style: none;
   padding: 0;
@@ -281,6 +277,10 @@ input[type="checkbox"]:checked:before {
 
 .flex-group {
   display: flex;
+}
+
+.no-display {
+  display: none;
 }
 
 @media (min-width: 650px) {

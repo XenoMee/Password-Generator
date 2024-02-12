@@ -146,12 +146,12 @@ hr {
 
 .password-container {
   flex-direction: column;
-  /* background-color: var(--clr-neutral-100);
-  width: 100%;
-  justify-content: space-between;
-  padding: 1rem;
-  border-radius: 0.8rem;
-  position: relative;
+  background-color: var(--clr-neutral-100);
+  /* width: 100%;
+  justify-content: space-between; */
+  /* padding: 1rem;
+  border-radius: 0.8rem; */
+  /* position: relative;
   overflow: hidden;
   gap: 1rem; */
 }

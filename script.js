@@ -27,3 +27,8 @@ generatePasswordButton.addEventListener('click', function() {
     const includeSymbols = includeSymbolsEl.checked;
     const generatedPassword = generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols);
 });
+
+// Create 'generateRandomPassword' functionality
+function generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols){
+    
+}

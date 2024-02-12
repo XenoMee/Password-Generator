@@ -294,4 +294,9 @@ input[type="checkbox"]:checked:before {
     flex-direction: row;
     padding: 1rem;
   }
+
+  .user-settings {
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
 }

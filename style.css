@@ -151,9 +151,9 @@ hr {
   justify-content: space-between;
   padding: 1rem;
   border-radius: 0.8rem;
-  /* position: relative;
-  overflow: hidden;
-  gap: 1rem; */
+  position: relative;
+  /* overflow: hidden; */
+  /* gap: 1rem; */
 }
 
 /* .password-container::after {

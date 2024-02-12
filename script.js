@@ -10,8 +10,8 @@ const charactersAmountRange = document.getElementById("password-range");
 charactersAmountNumber.addEventListener('input', syncCharacterAmount);
 charactersAmountRange.addEventListener('input', syncCharacterAmount);
 
-// function syncCharacterAmount(e) {
-//     const value = e.target.value;
-//     charactersAmountNumber.value = value;
-//     charactersAmountRange.value = value;
-// }
+function syncCharacterAmount(e) {
+    // const value = e.target.value;
+    // charactersAmountNumber.value = value;
+    // charactersAmountRange.value = value;
+}

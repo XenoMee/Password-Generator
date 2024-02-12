@@ -39,4 +39,5 @@ function parseASCIICodes(low, high){
     for(i = low; i < high; i++){
         codes.push(i);
     }
+    return codes;
 }

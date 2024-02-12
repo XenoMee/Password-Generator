@@ -20,7 +20,7 @@ const generatePasswordButton = document.getElementById("generate-button");
 const includeUppercaseEl = document.getElementById("uppercase-check");
 const includeNumbersEl = document.getElementById("numbers-check");
 const includeSymbolsEl = document.getElementById("symbols-check");
-// const generatePassword = document.getElementById("generate-password");
+const generatePassword = document.getElementById("generate-password");
 generatePasswordButton.addEventListener('click', function() {
     const length = charactersAmountNumber.value;
     const includeUppercase = includeUppercaseEl.checked;

@@ -305,6 +305,10 @@ input[type="checkbox"]:checked:before {
     flex-direction: row;
   }
 
+  .password-container::after {
+    height: 12%;
+  }
+
   .password-button-container {
     gap: 1rem;
   }

@@ -17,7 +17,11 @@ function syncCharacterAmount(e) {
 
 // Generate a random password when the generate button is pressed
 const generatePasswordButton = document.getElementById("generate-password");
+const includeUppercase = document.getElementById("uppercase-check");
+const includeNumbers = document.getElementById("numbers-check");
+const includeSymbols = document.getElementById("symbols-check");
 generatePasswordButton.addEventListener('click', function() {
     const length = charactersAmountNumber.value;
+
     const generatedPassword = generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols);
 });

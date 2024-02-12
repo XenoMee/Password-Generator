@@ -22,6 +22,8 @@ const includeNumbersEl = document.getElementById("numbers-check");
 const includeSymbolsEl = document.getElementById("symbols-check");
 generatePasswordButton.addEventListener('click', function() {
     const length = charactersAmountNumber.value;
-
+    const includeUppercase = includeUppercaseEl.checked;
+    const includeNumbers = includeNumbersEl.checked;
+    const includeSymbols = includeSymbolsEl.checked;
     const generatedPassword = generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols);
 });

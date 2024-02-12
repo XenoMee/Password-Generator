@@ -97,6 +97,11 @@ body {
   align-content: center;
 }
 
+::selection {
+  background-color: var(--clr-primary-700);
+  color: var(--clr-accent-1);
+}
+
 /* Typography */
 .title {
   color: var(--clr-neutral-100);

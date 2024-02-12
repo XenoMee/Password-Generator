@@ -31,9 +31,9 @@ generatePasswordButton.addEventListener('click', function() {
     if(length > 7){
         const randomPassword = generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols);
         generatedPassword.value = randomPassword;
-        errorMessageEl.classList.add("error-massage");
+        errorMessageEl.classList.add("no-display");
     } else{
-        errorMessageEl.classList.remove("error-massage");
+        errorMessageEl.classList.remove("no-display");
         strongTextEl.innerHTML = `Password must be at least 8 characters long.`;
     }
 });

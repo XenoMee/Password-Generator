@@ -29,6 +29,7 @@ generatePasswordButton.addEventListener('click', function() {
 });
 
 // Create 'generateRandomPassword' functionality
+const UPPERCASE_CHAR_CODES = parseASCIICodes(65, 90);
 function generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols){
 
 }

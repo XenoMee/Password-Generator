@@ -156,7 +156,7 @@ hr {
   gap: 1rem;
 }
 
-/* .password-container::after {
+.password-container::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -166,41 +166,41 @@ hr {
   background-color: var(--clr-accent-1);
 }
 
-.password-button-container {
+/* .password-button-container {
   justify-content: space-between;
-}
+} */
 
-.password-form {
+/* .password-form {
   align-items: center;
-}
+} */
 
-.generated-password {
+/* .generated-password {
   border: none;
   outline: none;
-}
+} */
 
-.password-customize-form {
+/* .password-customize-form {
   background-color: var(--clr-neutral-100);
   color: var(--clr-primary-700);
   padding: 1.5rem;
   border-radius: 0.8rem;
-}
+} */
 
-.custom-length {
+/* .custom-length {
   justify-content: start;
   align-items: center;
   gap: 1rem;
-}
+} */
 
-.password-length {
+/* .password-length {
   border-radius: 0.5rem;
   text-align: center;
   padding-left: 0.7rem;
   width: 4rem;
   border: 1px solid var(--clr-primary-700);
-}
+} */
 
-.password-range {
+/* .password-range {
   appearance: none;
   cursor: pointer;
   outline: none;
@@ -208,21 +208,21 @@ hr {
   border-radius: 1rem;
   background-color: var(--clr-primary-200);
 }
-
-.checkbox-list {
+ */
+/* .checkbox-list {
   list-style: none;
-}
+} */
 
-.checkbox-item {
+/* .checkbox-item {
   gap: 0.7rem;
   align-items: center;
-}
+} */
 
-.checkbox-item + .checkbox-item {
+/* .checkbox-item + .checkbox-item {
   margin-top: 0.2em;
-}
+} */
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
   appearance: none;
   background-color: #fff;
   color: currentColor;
@@ -234,9 +234,9 @@ input[type="checkbox"] {
 
   display: grid;
   place-content: center;
-}
+} */
 
-input[type="checkbox"]::before {
+/* input[type="checkbox"]::before {
   content: "";
   width: 0.65em;
   height: 0.65em;
@@ -245,9 +245,9 @@ input[type="checkbox"]::before {
   box-shadow: inset 1em 1em var(--clr-accent-1);
   transform-origin: bottom left;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-}
+} */
 
-input[type="checkbox"]:checked:before {
+/* input[type="checkbox"]:checked:before {
   transform: scale(1);
 } */
 

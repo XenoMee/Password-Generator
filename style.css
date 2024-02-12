@@ -256,6 +256,14 @@ input[type="checkbox"]:checked:before {
   gap: 2rem;
 }
 
+.grid-flow[data-spacing="extra-small"] {
+  gap: 0.5rem;
+}
+
+/* .grid-flow[data-spacing="small"] {
+  gap: 1rem;
+} */
+
 .grid-flow[data-spacing="large"] {
   gap: 2.5rem;
 }

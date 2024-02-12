@@ -152,7 +152,7 @@ hr {
   padding: 1rem;
   border-radius: 0.8rem;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* gap: 1rem; */
 }
 

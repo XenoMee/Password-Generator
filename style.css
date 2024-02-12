@@ -181,6 +181,7 @@ hr {
 
 .generated-password {
   border: none;
+  outline: none;
 }
 
 .password-customize-form {

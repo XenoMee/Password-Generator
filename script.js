@@ -41,6 +41,7 @@ const SYMBOL_CHAR_CODES = parseASCIICodes(33, 47).concat(
 );
 function generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols){
     let charCodes = LOWERCASE_CHAR_CODES;
+    if(includeUppercase) charCodes =  charCodes.concat(UPPERCASE_CHAR_CODES);
 }
 
 // Create function to loop through ASCII codes

@@ -221,7 +221,7 @@ hr {
   margin-top: 0.2em;
 }
 
-/* input[type="checkbox"] {
+input[type="checkbox"] {
   appearance: none;
   background-color: #fff;
   color: currentColor;
@@ -233,9 +233,9 @@ hr {
 
   display: grid;
   place-content: center;
-} */
+}
 
-/* input[type="checkbox"]::before {
+input[type="checkbox"]::before {
   content: "";
   width: 0.65em;
   height: 0.65em;
@@ -244,11 +244,11 @@ hr {
   box-shadow: inset 1em 1em var(--clr-accent-1);
   transform-origin: bottom left;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-} */
+}
 
-/* input[type="checkbox"]:checked:before {
+input[type="checkbox"]:checked:before {
   transform: scale(1);
-} */
+}
 
 /* Utility classes */
 .grid-flow {

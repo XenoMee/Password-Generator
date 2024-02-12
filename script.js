@@ -21,14 +21,20 @@ const includeUppercaseEl = document.getElementById("uppercase-check");
 const includeNumbersEl = document.getElementById("numbers-check");
 const includeSymbolsEl = document.getElementById("symbols-check");
 const generatedPassword = document.getElementById("generated-password");
+const errorMessageEl = document.getElementById("error-message");
 generatePasswordButton.addEventListener('click', function() {
     const length = charactersAmountNumber.value;
     const includeUppercase = includeUppercaseEl.checked;
     const includeNumbers = includeNumbersEl.checked;
     const includeSymbols = includeSymbolsEl.checked;
-    const randomPassword = generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols);
-    generatedPassword.value = randomPassword;
-
+    if(length > 7){
+        const randomPassword = generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols);
+        generatedPassword.value = randomPassword;
+        // errorMessageEl.classList.add("error-massage");
+    } else{
+        // errorMessageEl.classList.remove("error-massage");
+        errorMessageEl.innerText = `Password must be at least 8 characters long.`;
+    }
 });
 
 // Create 'generateRandomPassword' functionality
@@ -42,7 +48,7 @@ const SYMBOL_CHAR_CODES = parseASCIICodes(33, 47).concat(
         )
     )
 );
-const errorMessageEl = document.getElementById("error-message");
+
 function generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols){
     let charCodes = LOWERCASE_CHAR_CODES;
     if(includeUppercase) charCodes =  charCodes.concat(UPPERCASE_CHAR_CODES);

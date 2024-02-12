@@ -292,5 +292,6 @@ input[type="checkbox"]:checked:before {
 
   .password-container {
     flex-direction: row;
+    padding: 1rem;
   }
 }

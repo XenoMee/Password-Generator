@@ -217,9 +217,9 @@ hr {
   align-items: center;
 }
 
-/* .checkbox-item + .checkbox-item {
+.checkbox-item + .checkbox-item {
   margin-top: 0.2em;
-} */
+}
 
 /* input[type="checkbox"] {
   appearance: none;

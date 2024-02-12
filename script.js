@@ -30,5 +30,10 @@ generatePasswordButton.addEventListener('click', function() {
 
 // Create 'generateRandomPassword' functionality
 function generateRandomPassword(length, includeUppercase, includeNumbers, includeSymbols){
+
+}
+
+// Create function to loop through ASCII codes
+function parseASCIICodes(low, high){
     
 }

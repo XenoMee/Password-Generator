@@ -212,10 +212,10 @@ hr {
   list-style: none;
 }
 
-/* .checkbox-item {
+.checkbox-item {
   gap: 0.7rem;
   align-items: center;
-} */
+}
 
 /* .checkbox-item + .checkbox-item {
   margin-top: 0.2em;

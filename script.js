@@ -37,6 +37,6 @@ function generateRandomPassword(length, includeUppercase, includeNumbers, includ
 function parseASCIICodes(low, high){
     const codes = [];
     for(i = low; i < high; i++){
-        
+        codes.push(i);
     }
 }

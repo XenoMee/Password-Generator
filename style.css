@@ -170,9 +170,9 @@ hr {
   justify-content: space-between;
 }
 
-/* .password-form {
+.password-form {
   align-items: center;
-} */
+}
 
 /* .generated-password {
   border: none;

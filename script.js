@@ -7,8 +7,8 @@
 const charactersAmountNumber = document.getElementById("password-length");
 const charactersAmountRange = document.getElementById("password-range");
 
-// charactersAmountNumber.addEventListener('input', syncCharacterAmount);
-// charactersAmountRange.addEventListener('input', syncCharacterAmount);
+charactersAmountNumber.addEventListener('input', syncCharacterAmount);
+charactersAmountRange.addEventListener('input', syncCharacterAmount);
 
 // function syncCharacterAmount(e) {
 //     const value = e.target.value;

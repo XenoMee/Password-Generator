@@ -201,7 +201,7 @@ hr {
 
 .password-range {
   appearance: none;
-  /* cursor: pointer; */
+  cursor: pointer;
   /* outline: none; */
   /* height: 0.5rem; */
   /* border-radius: 1rem; */

@@ -196,7 +196,7 @@ hr {
   text-align: center;
   padding-left: 0.7rem;
   width: 4rem;
-  /* border: 1px solid var(--clr-primary-700); */
+  border: 1px solid var(--clr-primary-700);
 }
 
 /* .password-range {

@@ -3,7 +3,6 @@
 // TODO: Toggle symbols and numbers on/off
 // TODO: Light/Dark mode toggle button
 
-// TODO: Sync number and range inputs
 const charactersAmountNumber = document.getElementById("password-length");
 const charactersAmountRange = document.getElementById("password-range");
 
@@ -15,3 +14,6 @@ function syncCharacterAmount(e) {
     charactersAmountNumber.value = value;
     charactersAmountRange.value = value;
 }
+
+// Generate a random password when the generate button is pressed
+const generatePasswordButton = document.getElementById("generate-password");

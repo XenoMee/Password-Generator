@@ -174,10 +174,9 @@ hr {
   align-items: center;
 }
 
-/* .generated-password {
+.generated-password {
   border: none;
-  outline: none;
-} */
+}
 
 /* .password-customize-form {
   background-color: var(--clr-neutral-100);

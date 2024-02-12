@@ -144,20 +144,6 @@ hr {
   border: 1px solid var(--clr-primary-700);
 }
 
-.display {
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.password {
-  padding: 0.3rem 1.5rem;
-  background-color: var(--clr-primary-700);
-  color: var(--clr-accent-2);
-  font-size: var(--fs-200);
-  font-weight: var(--fw-medium);
-}
-
 /* Utility classes */
 .grid-flow {
   display: grid;

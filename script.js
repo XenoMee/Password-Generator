@@ -18,5 +18,5 @@ function syncCharacterAmount(e) {
 // Generate a random password when the generate button is pressed
 const generatePasswordButton = document.getElementById("generate-password");
 generatePasswordButton.addEventListener('click', function() {
-    
+    const generatedPassword = generateRandomPassword();
 });

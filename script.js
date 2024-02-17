@@ -2,6 +2,7 @@ const darkModeToggleButton = document.getElementById("toggle-button");
 const moonIcon = darkModeToggleButton.children[0];
 const sunIcon = darkModeToggleButton.children[1];
 let storagedDarkMode = localStorage.getItem("Dark Mode");
+console.log(storagedDarkMode);
 
 if (storagedDarkMode === "enabled") {
   enableDarkMode();
@@ -20,16 +21,22 @@ function disableDarkMode() {
   localStorage.setItem("Dark Mode", null);
 }
 
+function enableSunIcon() {
+  moonIcon.style.display = "none";
+  sunIcon.style.display = "inline-block";
+}
+
+function enableMoonIcon() {
+  sunIcon.style.display = "none";
+  moonIcon.style.display = "inline-block";
+}
+
 darkModeToggleButton.addEventListener("click", function () {
-  storagedDarkMode = localStorage.getItem("Dark Mode");
+  // storagedDarkMode = localStorage.getItem("Dark Mode");
   if (storagedDarkMode !== "enabled") {
     enableDarkMode();
-    moonIcon.style.display = "none";
-    sunIcon.style.display = "inline-block";
   } else {
     disableDarkMode();
-    sunIcon.style.display = "none";
-    moonIcon.style.display = "inline-block";
   }
 });
 

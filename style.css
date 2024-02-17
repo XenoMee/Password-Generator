@@ -1,13 +1,9 @@
 :root {
   /* Colors */
-  --clr-secondary: #2d3250;
-  --clr-primary: #3f0071;
-
-  --clr-light: #f1eaff;
+  --clr-light: #f5f3ff;
   --clr-dark: rgb(24 16 40);
-
-  --clr-accent: #f59e0b;
-  --clr-accent-2: #8b5cf6;
+  --clr-primary: #3f0071;
+  --clr-secondary: #f59e0b;
 
   --clr-foreground: var(--clr-dark);
   --clr-background: var(--clr-light);
@@ -38,8 +34,8 @@
   --clr-light: #f1eaff;
   --clr-dark: rgb(24 16 40);
 
-  --clr-accent: #f59e0b;
-  --clr-accent-2: #8b5cf6;
+  --clr-secondary: #f59e0b;
+  --clr-secondary-2: #8b5cf6;
 
   --clr-foreground: var(--clr-light);
   --clr-background: var(--clr-dark);
@@ -116,7 +112,7 @@ body {
 
 ::selection {
   background-color: var(--clr-secondary);
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
 }
 
 /* Typography */
@@ -129,7 +125,7 @@ body {
 }
 
 .accent-color {
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
 }
 
 /* Layout */
@@ -151,7 +147,7 @@ body {
   border-radius: 50%;
   padding: 0.2em 0.5em;
   font-size: var(--fs-400);
-  color: var(--clr-accent);
+  color: var(--clr-secondary);
   border: none;
   cursor: pointer;
 }
@@ -165,7 +161,7 @@ body {
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-secondary);
   color: var(--clr-background);
   font-size: var(--fs-200);
   font-weight: var(--fw-medium);
@@ -198,7 +194,7 @@ hr {
   left: 0;
   width: 100%;
   height: 8%;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-secondary);
 }
 
 .password-button-container {
@@ -283,7 +279,7 @@ input[type="checkbox"]::before {
   height: 0.65em;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--clr-accent);
+  box-shadow: inset 1em 1em var(--clr-secondary);
   transform-origin: bottom left;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }

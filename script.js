@@ -2,7 +2,7 @@ const darkModeToggleButton = document.getElementById("toggle-button");
 let storagedDarkMode = localStorage.getItem("Dark Mode");
 
 function enableDarkMode() {
-  //   document.body.classList.add("dark-mode");
+  document.body.classList.add("dark-mode");
 }
 
 darkModeToggleButton.addEventListener("click", function () {

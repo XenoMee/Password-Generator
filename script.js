@@ -6,6 +6,11 @@ function enableDarkMode() {
   localStorage.setItem("Dark Mode", "enabled");
 }
 
+function disableDarkMode() {
+  document.body.classList.remove("dark-mode");
+  localStorage.setItem("Dark Mode", null);
+}
+
 darkModeToggleButton.addEventListener("click", function () {
   if (storagedDarkMode === "enabled") {
     //enable dark mode

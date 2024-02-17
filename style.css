@@ -1,15 +1,14 @@
 :root {
   /* Colors */
   --clr-primary-200: hsl(255, 5%, 84%);
-  --clr-primary-700: hsl(215, 30%, 22%);
-  --clr-primary-800: hsl(215, 28%, 17%);
+  --clr-primary-700: #2d3250;
+  --clr-primary-800: #3f0071;
 
-  --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-500: hsl(144, 70%, 58%);
-  --clr-neutral-900: hsl(0, 0%, 11%);
+  --clr-neutral-100: #f1eaff;
+  --clr-neutral-500: #8b5cf6;
+  --clr-neutral-900: rgb(24 16 40);
 
-  --clr-accent-1: hsl(160, 84%, 39%);
-  --clr-accent-2: hsl(142, 93%, 65%);
+  --clr-accent-1: #f59e0b;
 
   /* Font family */
   --font-family-body: "Inter", sans-serif;
@@ -28,6 +27,18 @@
   --fw-medium: 500;
   --fw-dark: 800;
 }
+
+/* .light-mode {
+  --clr-primary-200: hsl(255, 5%, 84%);
+  --clr-primary-700: hsl(215, 30%, 22%);
+  --clr-primary-800: hsl(215, 28%, 17%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-500: hsl(144, 70%, 58%);
+  --clr-neutral-900: hsl(0, 0%, 11%);
+
+  --clr-accent-1: hsl(160, 84%, 39%);
+} */
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -135,14 +146,14 @@ body {
   border: none;
   border-radius: 0.5rem;
   background-color: var(--clr-accent-1);
-  color: var(--clr-neutral-100);
+  color: var(--clr-primary-700);
   font-size: var(--fs-200);
   font-weight: var(--fw-medium);
   cursor: pointer;
 }
 
 .btn:is(:hover, :focus) {
-  color: var(--clr-primary-800);
+  color: var(--clr-neutral-100);
 }
 
 hr {
@@ -182,6 +193,7 @@ hr {
 .generated-password {
   border: none;
   outline: none;
+  background-color: var(--clr-neutral-100);
 }
 
 .password-customize-form {
@@ -203,6 +215,7 @@ hr {
   padding-left: 0.7rem;
   width: 4rem;
   border: 1px solid var(--clr-primary-700);
+  background-color: var(--clr-neutral-100);
 }
 
 .password-range {

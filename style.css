@@ -101,7 +101,7 @@ h1 {
 
 /* General/Generic */
 body {
-  background-color: #111827;
+  background-color: #374151;
   color: var(--clr-foreground);
   font-family: var(--font-family-primary);
   font-size: var(--fs-300);

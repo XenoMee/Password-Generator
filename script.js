@@ -24,8 +24,8 @@ darkModeToggleButton.addEventListener("click", function () {
   storagedDarkMode = localStorage.getItem("Dark Mode");
   if (storagedDarkMode !== "enabled") {
     enableDarkMode();
-//     moonIcon.style.display = "none";
-//     sunIcon.style.display = "inline-block";
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "inline-block";
 //   } else {
 //     disableDarkMode();
 //     sunIcon.style.display = "none";

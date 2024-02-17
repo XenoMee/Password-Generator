@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --clr-light: #f5f3ff;
+  --clr-light: #ede9fe;
   --clr-dark: rgb(24 16 40);
   --clr-primary: #3f0071;
   --clr-secondary: #f59e0b;
@@ -31,7 +31,7 @@
   --clr-secondary: #2d3250;
   --clr-primary: #3f0071;
 
-  --clr-light: #f1eaff;
+  --clr-light: #ede9fe;
   --clr-dark: rgb(24 16 40);
 
   --clr-secondary: #f59e0b;

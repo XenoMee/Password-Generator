@@ -1,6 +1,6 @@
 const darkModeToggleButton = document.getElementById("toggle-button");
-// const moonIcon = darkModeToggleButton.children[0];
-// const sunIcon = darkModeToggleButton.children[1];
+const moonIcon = darkModeToggleButton.children[0];
+const sunIcon = darkModeToggleButton.children[1];
 let storagedDarkMode = localStorage.getItem("Dark Mode");
 
 // if (storagedDarkMode === "enabled") {

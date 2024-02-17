@@ -31,16 +31,19 @@
   --fw-primary: 800;
 }
 
-.primary-mode {
-  --clr-text: hsl(255, 5%, 84%);
+.dark-mode {
   --clr-secondary: #2d3250;
   --clr-primary: #3f0071;
 
   --clr-light: #f1eaff;
-  --clr-accent-2: #8b5cf6;
   --clr-dark: rgb(24 16 40);
 
   --clr-accent: #f59e0b;
+  --clr-accent-2: #8b5cf6;
+
+  --clr-foreground: var(--clr-light);
+  --clr-background: var(--clr-dark);
+  --clr-text: var(--clr-secondary);
 }
 
 /*
@@ -144,7 +147,7 @@ body {
   position: absolute;
   right: 3%;
   top: 2%;
-  background-color: var(--clr-light);
+  background-color: var(--clr-foreground);
   border-radius: 50%;
   padding: 0.2em 0.5em;
   font-size: var(--fs-400);
@@ -163,18 +166,18 @@ body {
   border: none;
   border-radius: 0.5rem;
   background-color: var(--clr-accent);
-  color: var(--clr-foreground);
+  color: var(--clr-background);
   font-size: var(--fs-200);
   font-weight: var(--fw-medium);
   cursor: pointer;
 }
 
 .btn:is(:hover, :focus) {
-  color: var(--clr-light);
+  color: var(--clr-foreground);
 }
 
 hr {
-  border: 1px solid var(--clr-secondary);
+  border: 1px solid var(--clr-foreground);
 }
 
 .password-container {
@@ -232,8 +235,8 @@ hr {
   text-align: center;
   padding-left: 0.7rem;
   width: 4rem;
-  border: 1px solid var(--clr-secondary);
-  background-color: var(--clr-light);
+  border: none;
+  background-color: var(--clr-background);
 }
 
 .password-range {

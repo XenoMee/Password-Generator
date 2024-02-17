@@ -1,5 +1,14 @@
 const darkModeToggleButton = document.getElementById("toggle-button");
+// const moonIcon = darkModeToggleButton.children[0];
+// const sunIcon = darkModeToggleButton.children[1];
 let storagedDarkMode = localStorage.getItem("Dark Mode");
+
+// if (storagedDarkMode === "enabled") {
+//   enableDarkMode();
+//   moonIcon.style.display = "none";
+// } else {
+//   sunIcon.style.display = "none";
+// }
 
 function enableDarkMode() {
   document.body.classList.add("dark-mode");
@@ -12,11 +21,16 @@ function disableDarkMode() {
 }
 
 darkModeToggleButton.addEventListener("click", function () {
-  if (storagedDarkMode === "enabled") {
-    //enable dark mode
-    // switch dark mode toggle icon
-    // store in localStorage the value of dark mode
-  }
+  storagedDarkMode = localStorage.getItem("Dark Mode");
+  if (storagedDarkMode !== "enabled") {
+    enableDarkMode();
+//     moonIcon.style.display = "none";
+//     sunIcon.style.display = "inline-block";
+//   } else {
+//     disableDarkMode();
+//     sunIcon.style.display = "none";
+//     moonIcon.style.display = "inline-block";
+//   }
 });
 
 const charactersAmountNumber = document.getElementById("password-length");

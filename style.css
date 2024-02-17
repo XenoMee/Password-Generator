@@ -177,7 +177,7 @@ hr {
 .password-container {
   flex-direction: column;
   background-color: var(--clr-neutral-100);
-  width: 100%;
+  justify-self: stretch;
   justify-content: space-between;
   padding: 1rem;
   border-radius: 0.8rem;

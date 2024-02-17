@@ -137,7 +137,7 @@ body {
   position: relative;
 }
 
-/* .toggle-button {
+.toggle-button {
   position: absolute;
   right: 3%;
   top: 2%;
@@ -148,7 +148,7 @@ body {
   color: var(--clr-accent-1);
   border: none;
   cursor: pointer;
-} */
+}
 
 .intro {
   justify-items: start;

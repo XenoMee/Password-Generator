@@ -26,11 +26,11 @@ darkModeToggleButton.addEventListener("click", function () {
     enableDarkMode();
     moonIcon.style.display = "none";
     sunIcon.style.display = "inline-block";
-//   } else {
-//     disableDarkMode();
-//     sunIcon.style.display = "none";
-//     moonIcon.style.display = "inline-block";
-//   }
+  } else {
+    disableDarkMode();
+    sunIcon.style.display = "none";
+    moonIcon.style.display = "inline-block";
+  }
 });
 
 const charactersAmountNumber = document.getElementById("password-length");

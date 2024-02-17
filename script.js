@@ -3,8 +3,8 @@ const moonIcon = darkModeToggleButton.children[0];
 const sunIcon = darkModeToggleButton.children[1];
 let storagedDarkMode = localStorage.getItem("Dark Mode");
 
-// if (storagedDarkMode === "enabled") {
-//   enableDarkMode();
+if (storagedDarkMode === "enabled") {
+  enableDarkMode();
 //   moonIcon.style.display = "none";
 // } else {
 //   sunIcon.style.display = "none";

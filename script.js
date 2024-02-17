@@ -6,9 +6,9 @@ let storagedDarkMode = localStorage.getItem("Dark Mode");
 if (storagedDarkMode === "enabled") {
   enableDarkMode();
   moonIcon.style.display = "none";
-// } else {
-//   sunIcon.style.display = "none";
-// }
+} else {
+  sunIcon.style.display = "none";
+}
 
 function enableDarkMode() {
   document.body.classList.add("dark-mode");

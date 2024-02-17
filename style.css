@@ -1,18 +1,21 @@
 :root {
   /* Colors */
-  --clr-primary-200: hsl(255, 5%, 84%);
-  --clr-primary-700: #2d3250;
-  --clr-primary-800: #3f0071;
+  --clr-secondary: #2d3250;
+  --clr-primary: #3f0071;
 
-  --clr-neutral-100: #f1eaff;
-  --clr-neutral-500: #8b5cf6;
-  --clr-neutral-900: rgb(24 16 40);
+  --clr-light: #f1eaff;
+  --clr-dark: rgb(24 16 40);
 
-  --clr-accent-1: #f59e0b;
+  --clr-accent: #f59e0b;
+  --clr-accent-2: #8b5cf6;
+
+  --clr-foreground: var(--clr-dark);
+  --clr-background: var(--clr-light);
+  --clr-text: var(--clr-secondary);
 
   /* Font family */
-  --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Karla", sans-serif;
+  --font-family-primary: "Inter", sans-serif;
+  --font-family-secondary: "Karla", sans-serif;
 
   /* Font size */
   --fs-200: 0.9375rem;
@@ -25,19 +28,19 @@
   /* Font weight */
   --fw-regular: 400;
   --fw-medium: 500;
-  --fw-dark: 800;
+  --fw-primary: 800;
 }
 
-.light-mode {
-  --clr-primary-200: hsl(255, 5%, 84%);
-  --clr-primary-700: #2d3250;
-  --clr-primary-800: #3f0071;
+.primary-mode {
+  --clr-text: hsl(255, 5%, 84%);
+  --clr-secondary: #2d3250;
+  --clr-primary: #3f0071;
 
-  --clr-neutral-100: #f1eaff;
-  --clr-neutral-500: #8b5cf6;
-  --clr-neutral-900: rgb(24 16 40);
+  --clr-light: #f1eaff;
+  --clr-accent-2: #8b5cf6;
+  --clr-dark: rgb(24 16 40);
 
-  --clr-accent-1: #f59e0b;
+  --clr-accent: #f59e0b;
 }
 
 /*
@@ -95,9 +98,9 @@ h1 {
 
 /* General/Generic */
 body {
-  background-color: var(--clr-neutral-900);
-  color: var(--clr-primary-200);
-  font-family: var(--font-family-body);
+  background-color: #111827;
+  color: var(--clr-foreground);
+  font-family: var(--font-family-primary);
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
   min-height: 100svh;
@@ -109,21 +112,21 @@ body {
 }
 
 ::selection {
-  background-color: var(--clr-primary-700);
-  color: var(--clr-accent-1);
+  background-color: var(--clr-secondary);
+  color: var(--clr-accent);
 }
 
 /* Typography */
 .title {
-  color: var(--clr-neutral-100);
+  color: var(--clr-foreground);
   font-size: var(--fs-700);
-  font-family: var(--font-family-heading);
-  font-weight: var(--fw-dark);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--fw-primary);
   margin-bottom: 0.5rem;
 }
 
 .accent-color {
-  color: var(--clr-accent-1);
+  color: var(--clr-accent);
 }
 
 /* Layout */
@@ -131,7 +134,7 @@ body {
   --content-padding: 5rem 1rem;
 
   max-width: 37rem;
-  background-color: var(--clr-primary-800);
+  background-color: var(--clr-background);
   padding: var(--content-padding);
   border-radius: 0.8rem;
   position: relative;
@@ -141,11 +144,11 @@ body {
   position: absolute;
   right: 3%;
   top: 2%;
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-light);
   border-radius: 50%;
   padding: 0.2em 0.5em;
   font-size: var(--fs-400);
-  color: var(--clr-accent-1);
+  color: var(--clr-accent);
   border: none;
   cursor: pointer;
 }
@@ -159,24 +162,24 @@ body {
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: var(--clr-accent-1);
-  color: var(--clr-primary-700);
+  background-color: var(--clr-accent);
+  color: var(--clr-foreground);
   font-size: var(--fs-200);
   font-weight: var(--fw-medium);
   cursor: pointer;
 }
 
 .btn:is(:hover, :focus) {
-  color: var(--clr-neutral-100);
+  color: var(--clr-light);
 }
 
 hr {
-  border: 1px solid var(--clr-primary-700);
+  border: 1px solid var(--clr-secondary);
 }
 
 .password-container {
   flex-direction: column;
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-foreground);
   justify-self: stretch;
   padding: 1rem;
   border-radius: 0.8rem;
@@ -192,7 +195,7 @@ hr {
   left: 0;
   width: 100%;
   height: 8%;
-  background-color: var(--clr-accent-1);
+  background-color: var(--clr-accent);
 }
 
 .password-button-container {
@@ -206,13 +209,14 @@ hr {
 .generated-password {
   border: none;
   outline: none;
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-foreground);
+  color: var(--clr-background);
   width: 100%;
 }
 
 .password-customize-form {
-  background-color: var(--clr-neutral-100);
-  color: var(--clr-primary-700);
+  background-color: var(--clr-foreground);
+  color: var(--clr-background);
   padding: 1rem;
   border-radius: 0.8rem;
 }
@@ -228,8 +232,8 @@ hr {
   text-align: center;
   padding-left: 0.7rem;
   width: 4rem;
-  border: 1px solid var(--clr-primary-700);
-  background-color: var(--clr-neutral-100);
+  border: 1px solid var(--clr-secondary);
+  background-color: var(--clr-light);
 }
 
 .password-range {
@@ -238,7 +242,7 @@ hr {
   outline: none;
   height: 0.5rem;
   border-radius: 1rem;
-  background-color: var(--clr-primary-200);
+  background-color: var(--clr-background);
 }
 
 .checkbox-list {
@@ -257,7 +261,7 @@ hr {
 
 input[type="checkbox"] {
   appearance: none;
-  background-color: #fff;
+  background-color: var(--clr-foreground);
   color: currentColor;
   width: 1.15em;
   height: 1.15em;
@@ -275,7 +279,7 @@ input[type="checkbox"]::before {
   height: 0.65em;
   transform: scale(0);
   transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em var(--clr-accent-1);
+  box-shadow: inset 1em 1em var(--clr-accent);
   transform-origin: bottom left;
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }

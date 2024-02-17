@@ -1,4 +1,14 @@
 const darkModeToggleButton = document.getElementById("toggle-button");
+// let storagedDarkMode = localStorage.getItem("Dark Mode");
+
+darkModeToggleButton.addEventListener("click", function () {
+//   if (storagedDarkMode !== "enabled") {
+    // document.body.classList.add("dark-mode");
+    //enable dark mode
+    // switch dark mode toggle icon
+    // store in localStorage the value of dark mode
+  }
+});
 
 const charactersAmountNumber = document.getElementById("password-length");
 const charactersAmountRange = document.getElementById("password-range");

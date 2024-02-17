@@ -237,6 +237,7 @@ hr {
   width: 4rem;
   border: none;
   background-color: var(--clr-background);
+  color: var(--clr-foreground);
 }
 
 .password-range {

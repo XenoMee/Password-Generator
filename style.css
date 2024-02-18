@@ -238,6 +238,7 @@ hr {
   height: 0.5rem;
   border-radius: 1rem;
   background-color: var(--clr-background);
+  accent-color: var(--clr-secondary);
 }
 
 .checkbox-list {

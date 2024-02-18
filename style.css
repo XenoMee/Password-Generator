@@ -28,18 +28,13 @@
 }
 
 .dark-mode {
-  --clr-secondary: #2d3250;
-  --clr-primary: #3f0071;
-
   --clr-light: #ede9fe;
   --clr-dark: rgb(24 16 40);
-
+  --clr-primary: #3f0071;
   --clr-secondary: #f59e0b;
-  --clr-secondary-2: #8b5cf6;
 
   --clr-foreground: var(--clr-light);
   --clr-background: var(--clr-dark);
-  --clr-text: var(--clr-secondary);
 }
 
 /*

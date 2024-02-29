@@ -1,15 +1,7 @@
-const darkModeToggleButton = document.getElementById("toggle-button");
-const moonIcon = darkModeToggleButton.children[0];
-const sunIcon = darkModeToggleButton.children[1];
+const darkModeToggleCheckbox = document.querySelector(".dark-toggle-checkbox");
 let storagedDarkMode = localStorage.getItem("Dark Mode");
-console.log(storagedDarkMode);
 
-if (storagedDarkMode === "enabled") {
-  enableDarkMode();
-  moonIcon.style.display = "none";
-} else {
-  sunIcon.style.display = "none";
-}
+if (storagedDarkMode === "enabled") enableDarkMode();
 
 function enableDarkMode() {
   document.body.classList.add("dark-mode");
@@ -21,25 +13,10 @@ function disableDarkMode() {
   localStorage.setItem("Dark Mode", null);
 }
 
-function enableSunIcon() {
-  moonIcon.style.display = "none";
-  sunIcon.style.display = "inline-block";
-}
-
-function enableMoonIcon() {
-  sunIcon.style.display = "none";
-  moonIcon.style.display = "inline-block";
-}
-
-darkModeToggleButton.addEventListener("click", function () {
+darkModeToggleCheckbox.addEventListener("change", () => {
   storagedDarkMode = localStorage.getItem("Dark Mode");
-  if (storagedDarkMode !== "enabled") {
-    enableDarkMode();
-    enableSunIcon();
-  } else {
-    disableDarkMode();
-    enableMoonIcon();
-  }
+  if (storagedDarkMode !== "enabled") enableDarkMode();
+  else disableDarkMode();
 });
 
 const charactersAmountNumber = document.getElementById("password-length");

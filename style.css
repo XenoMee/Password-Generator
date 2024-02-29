@@ -7,7 +7,6 @@
 
   --clr-foreground: var(--clr-dark);
   --clr-background: var(--clr-light);
-  --clr-text: var(--clr-secondary);
 
   /* Font family */
   --font-family-primary: "Inter", sans-serif;
@@ -100,6 +99,7 @@ body {
   min-height: 100svh;
   line-height: 1.4;
   padding: 0 1rem;
+  transition: background-color 250ms linear;
 
   display: grid;
   align-content: center;
@@ -134,17 +134,41 @@ body {
   position: relative;
 }
 
-.toggle-button {
+.dark-mode-switch {
+  justify-self: start;
   position: absolute;
-  right: 3%;
-  top: 2%;
+  left: 1rem;
+  top: 1rem;
+}
+
+.dark-toggle-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.dark-toggle-label {
+  width: 4.5rem;
+  position: relative;
   background-color: var(--clr-foreground);
-  border-radius: 50%;
-  padding: 0.2em 0.5em;
-  font-size: var(--fs-400);
   color: var(--clr-secondary);
-  border: none;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 100vh;
+}
+
+.ball {
+  background-color: var(--clr-background);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  transition: transform 200ms linear;
+}
+
+.dark-toggle-checkbox:checked + .dark-toggle-label .ball {
+  transform: translateX(2.1rem);
 }
 
 .intro {
@@ -319,6 +343,11 @@ input[type="checkbox"]:checked:before {
   .generator {
     --content-padding: 8rem 3rem;
     margin: 0 auto;
+  }
+
+  .dark-mode-switch {
+    left: initial;
+    right: 1rem;
   }
 
   .title {

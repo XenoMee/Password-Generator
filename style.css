@@ -106,7 +106,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-background);
   color: var(--clr-secondary);
 }
 

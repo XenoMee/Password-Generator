@@ -336,7 +336,7 @@ input[type="checkbox"]:checked:before {
   display: none;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 39em) {
   body {
     font-size: var(--fs-400);
   }

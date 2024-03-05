@@ -1,6 +1,6 @@
 export function generatePassword() {
-  const charactersAmountNumber = document.getElementById("password-length");
-  const charactersAmountRange = document.getElementById("password-range");
+  const charactersAmountNumber = document.querySelector("#password-length");
+  const charactersAmountRange = document.querySelector("#password-range");
 
   charactersAmountNumber.addEventListener("input", syncCharacterAmount);
   charactersAmountRange.addEventListener("input", syncCharacterAmount);
@@ -12,13 +12,13 @@ export function generatePassword() {
   }
 
   // Generate a random password when the generate button is pressed
-  const generatePasswordButton = document.getElementById("generate-button");
-  const includeUppercaseEl = document.getElementById("uppercase-check");
-  const includeNumbersEl = document.getElementById("numbers-check");
-  const includeSymbolsEl = document.getElementById("symbols-check");
-  const generatedPassword = document.getElementById("generated-password");
-  const errorMessageEl = document.getElementById("error-message");
-  const strongTextEl = document.getElementById("strong-text");
+  const generatePasswordButton = document.querySelector("#generate-button");
+  const includeUppercaseEl = document.querySelector("#uppercase-check");
+  const includeNumbersEl = document.querySelector("#numbers-check");
+  const includeSymbolsEl = document.querySelector("#symbols-check");
+  const generatedPassword = document.querySelector("#generated-password");
+  const errorMessageEl = document.querySelector("#error-message");
+  const strongTextEl = document.querySelector("#strong-text");
 
   generatePasswordButton.addEventListener("click", function () {
     const length = charactersAmountNumber.value;
@@ -32,7 +32,7 @@ export function generatePassword() {
         includeNumbers,
         includeSymbols
       );
-      generatedPassword.value = randomPassword;
+      generatedPassword.textContent = randomPassword;
       errorMessageEl.classList.add("no-display");
     } else {
       errorMessageEl.classList.remove("no-display");

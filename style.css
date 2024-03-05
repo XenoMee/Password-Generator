@@ -49,6 +49,7 @@
   */
 * {
   margin: 0;
+  transition: color 200ms ease-out, background-color 350ms ease-in-out;
 }
 
 /*
@@ -99,7 +100,6 @@ body {
   min-height: 100svh;
   line-height: 1.4;
   padding: 0 1rem;
-  transition: background-color 250ms linear;
 
   display: grid;
   align-content: center;

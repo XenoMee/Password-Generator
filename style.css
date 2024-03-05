@@ -156,6 +156,7 @@ body {
   align-items: center;
   padding: 0.5rem;
   border-radius: 100vh;
+  cursor: pointer;
 }
 
 .ball {

@@ -34,6 +34,7 @@ export function generatePassword() {
       );
       generatedPassword.textContent = randomPassword;
       errorMessageEl.classList.add("no-display");
+      document.querySelector("#copy-button").disabled = false;
     } else {
       errorMessageEl.classList.remove("no-display");
       strongTextEl.innerHTML = `Password must be at least 8 characters long.`;

@@ -176,6 +176,10 @@ body {
   justify-items: start;
 }
 
+.btn:disabled {
+  opacity: 0.5;
+}
+
 .btn {
   display: inline-block;
   padding: 0.5rem 1.5rem;
@@ -188,7 +192,7 @@ body {
   cursor: pointer;
 }
 
-.btn:is(:hover, :focus) {
+.btn:is(:hover, :focus):not(:disabled) {
   color: var(--clr-foreground);
 }
 

@@ -18,7 +18,6 @@ export function toggleDarkMode() {
 
   darkModeToggleCheckbox.addEventListener("change", () => {
     storagedDarkMode = localStorage.getItem("Dark Mode");
-    if (storagedDarkMode !== "enabled") enableDarkMode();
-    else disableDarkMode();
+    storagedDarkMode !== "enabled" ? enableDarkMode() : disableDarkMode();
   });
 }
